@@ -1,0 +1,29 @@
+<div class="main">
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Quantity</th>
+    <th>Topping</th>
+    <th>Total Cost</th>
+  </tr>
+  <tr>
+    <td><%= @pizza.first_name() %></td>
+    <td><%= @pizza.last_name() %></td>
+    <td><%= @pizza.quantity() %></td>
+    <td><%= @pizza.topping() %></td>
+    <td>£<%= @pizza.total() %></td>
+    <td>
+      <form action="/pizzas/<%= @pizza.id %>/edit" method="get" />
+      <input type="submit" value="Edit">
+      </form>
+    </td>
+
+    <td>
+      <form action="/pizzas/<%= @pizza.id %>/delete" method="post">
+        <input type="submit" value="Delete" />
+      </form>
+    </td>
+  </tr>
+</table>
+</div>

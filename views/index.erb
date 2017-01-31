@@ -1,0 +1,20 @@
+<div class = "main">
+<h1>Pizza Orders</h1>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Topping</th>
+  </tr>
+  <% for pizza in @pizzas %>
+  <tr>
+    <td><a href = "/pizzas/<%= pizza.id %>"><%= pizza.pretty_name() %></a></td>
+    <td><%= pizza.quantity() %></td>
+    <td><%= pizza.topping() %></td>
+  </tr>
+</a>
+<% end %>
+</table>
+</div>
