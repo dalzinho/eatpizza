@@ -16,6 +16,15 @@
   margin: 10px;
   border-radius: 15px;
 
+
+}
+
+.main form label, input {
+color: #ffaaa3;
+padding: 5px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
 }
 
 .main h1 {
@@ -48,6 +57,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.main form label input {
+  display: flex;
+  justify-content: fl;
+}
 
 nav {
   margin: 10px;
@@ -83,4 +96,5 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  min-width: 650px;
 }
